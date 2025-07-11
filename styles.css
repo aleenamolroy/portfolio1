@@ -1,0 +1,267 @@
+* {
+    color: rgb(255, 255, 255);
+    font-family: Bradley Hand, cursive;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: rgb(8, 8, 8);
+
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    position: fixed;
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.div-for-navbar a:hover {
+    background-color: powderblue;
+}
+
+a:active {
+    color: blueviolet;
+}
+
+.nav-home-class {
+    margin-left: 40rem;
+}
+
+.nav-content-class {
+    margin-left: 2rem;
+}
+
+.nav-name-class-portfolio {
+    font-size: 100%;
+}
+
+.div-for-navbar {
+    position: fixed;
+    overflow: hidden;
+    padding: 50px 10px;
+    width: 100%;
+    background-color: rgb(3, 3, 3);
+    top: 0;
+    z-index: 10;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    float: left;
+}
+
+.home-container {
+    margin-top: 10%;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+
+#Home-content-section-id h2 {
+    top: 40%;
+    animation: fadeIn 3s ease-in-out forwards;
+    opacity: 0;
+    left: 40%;
+}
+
+#Home-content-section-id h4 {
+    margin-top: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: powderblue;
+    left: 40%;
+}
+
+#Home-content-section-id p {
+    margin-top: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+#Home-content-section-id .button-for-contact-me {
+    text-align: center;
+    background-color: rgb(113, 169, 214);
+}
+
+img {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 100%;
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    left: 10%;
+    bottom: 25%;
+}
+
+#about-content-section-id h2 {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.for-about-p-content {
+    width: 50%;
+    border: 1px solid powderblue;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 20px auto;
+
+}
+
+.for-about-p-content p {
+    text-align: left;
+}
+
+.class-for-download-resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.skill-class-container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
+}
+
+.class-for-skill {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 20px;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.class-for-skill>div {
+    width: 100%;
+    border: 1px solid powderblue;
+    padding: 30px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.Education-container {
+    border-left: 6px solid palegoldenrod;
+    height: 600px;
+    position: relative;
+    left: 40%;
+    margin-top: 50px;
+    width: 60%;
+}
+
+.time-line-entry {
+    position: relative;
+    left: 0;
+    width: 100%;
+}
+
+.time-line-round {
+    position: absolute;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    background-color: palegoldenrod;
+    transform: translate(-60%, 0);
+    left: -1px;
+}
+
+.timeline-date {
+    position: absolute;
+    left: 20px;
+    width: 50px;
+    white-space: nowrap;
+}
+
+.timeline-content {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    white-space: nowrap;
+}
+
+.Project-container {
+    display: flex;
+    padding: 20px;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid powderblue;
+    margin: 10px auto;
+    width: 50%;
+    position: relative;
+}
+
+.Project-container>div {
+    width: 100%;
+    border: 1px solid powderblue;
+    padding: 20px;
+    overflow: hidden;
+    margin-left: 10px;
+
+}
+
+.project-line {
+
+    border-radius: 100% solid palegoldenrod;
+    margin: 20px auto;
+}
+
+.contact-me-container {
+    background-color: azure;
+    display: flex;
+    padding: 20px;
+    column-gap: 40px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid powderblue;
+    margin: 10px auto;
+    width: 100%;
+    position: sticky;
+    margin: 0;
+}
+
+.contact-me-container div {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+
+}

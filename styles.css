@@ -15,11 +15,23 @@ html {
     scroll-behavior: smooth;
 }
 
-nav {
+.navbar-class {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     position: fixed;
-    display: inline;
+    padding: 50px 10px;
+    width: 100%;
+    top:0;
+    z-index: 10;
+    background-color: black;
+    justify-content: space-between;
 }
-
+.nav-menu-class{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
 a {
     text-decoration: none;
 
@@ -33,36 +45,35 @@ a:active {
     color: blueviolet;
 }
 
-.nav-home-class {
-    margin-left: 40rem;
+/* .nav-home-class {
 }
 
 .nav-content-class {
-    margin-left: 2rem;
-}
+} */
 
 .nav-name-class-portfolio {
     font-size: 100%;
 }
 
 .div-for-navbar {
+    display: flex   ;
     position: fixed;
-    overflow: hidden;
     padding: 50px 10px;
     width: 100%;
     background-color: rgb(3, 3, 3);
     top: 0;
     z-index: 10;
-
+    justify-content: space-between;
 }
 
-ul {
+/* ul {
     list-style-type: none;
 }
 
 li {
-    float: left;
-}
+    display: inline;
+    margin-right: 40px;
+} */
 
 .home-container {
     margin-top: 10%;
@@ -265,3 +276,14 @@ img {
     }
 
 }
+/* @media screen and(max-width:600px){
+    .navbar-class {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.nav-menu-class{
+    flex-direction: column;
+    justify-content: center;
+}
+}  */

@@ -12,10 +12,10 @@ body {
     margin: 0;
 }
 
-/* html,
+html,
 body {
     overflow-x: hidden;
-} */
+}
 
 html {
     scroll-behavior: smooth;
@@ -33,6 +33,18 @@ html {
     z-index: 1000;
     background-color: black;
     justify-content: space-between;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
 }
 
 .nav-menu-class {
@@ -217,9 +229,12 @@ img {
 
 .timeline-content {
     position: absolute;
-    left: 20px;
+    left: 40px;
     top: 20px;
-    white-space: nowrap;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: calc(100%-60px);
 }
 
 .Project-container {
@@ -294,24 +309,36 @@ img {
     }
 
     .navbar-class {
-        padding: 40px 20px;
+        position: fixed;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
-        gap: 1px;
+        justify-content: space-between;
         padding: 10px 10px;
     }
 
-    .nav-menu-class{
-        padding: 20px;
-        height: auto;
-        flex-wrap: wrap;
+    .hamburger {
+        display: block;
     }
-    .nav-menu-class a{
-        font-size: 12px;
-    }
-    .nav-name-class {
+
+    .nav-menu-class {
         display: none;
+        flex-direction: column;
+        background-color: black;
+        text-align: center;
+        width: 100%;
+        /* flex-wrap: wrap; */
+    }
+
+    .nav-menu-class a {
+        padding: 5px;
+        margin: 1px 0;
+        border-top: 1px solid #444;
+        font-size: 14px;
+        display: block;
+    }
+
+    .nav-toggle:checked~.nav-menu-class {
+        display: flex;
     }
 
     .container-home-main {
@@ -340,31 +367,39 @@ img {
         max-width: 150px;
         height: 150px;
     }
+
     #Education-qualification-id {
         padding-bottom: 100px;
         left: 1%;
     }
-    .Education-container{
-        width: 100%;
-        padding-left: 15px;
-        gap: 30px;
+
+    .Education-container {
+        width: 90%;
+        left: 10%;
+        margin: 0 auto;
+        padding-left: 20px;
+        border-left: 4px solid palegoldenrod;
     }
-    .timeline-content h3{
-        font-size: 14px;
-    }
-    .timeline-content p{
-        font-size: 12px;
+
+    .timeline-content {
+        position: absolute;
+        left: 20px;
+        top: 20px;
         white-space: normal;
+        word-wrap: break-word;
         overflow-wrap: break-word;
-        word-break: break-word;
+        width: calc(100%-60px);
     }
-    .timeline-date{
+
+    .timeline-date {
         font-size: 14px;
+
     }
-    .time-line-round{
+
+    .time-line-round {
         width: 15px;
         height: 15px;
-        left: -16px;
+        left: -20px;
     }
 }
 

@@ -2,7 +2,8 @@
     color: rgb(255, 255, 255);
     font-family: Bradley Hand;
     box-sizing: border-box;
-
+margin: 0;
+padding: 0;
 }
 
 body {
@@ -10,7 +11,9 @@ body {
 
     margin: 0;
 }
-
+html, body {
+    overflow-x: hidden;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -97,7 +100,6 @@ a:active {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    position: relative;
     gap: 40px;
 
 }
@@ -274,21 +276,19 @@ img {
 
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 601px) {
     * {
         font-size: 14px;
     }
 
     body {
                 padding: 10px;
-                background-color: brown;
     }
 
     .container-home-main {
         display: flex;
         flex-direction: column;
         text-align: center;
-        row-gap: 20px;
     }
 
     #Home-content-section-id {

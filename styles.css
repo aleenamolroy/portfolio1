@@ -274,7 +274,7 @@ img {
 
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
     * {
         font-size: 14px;
     }
